@@ -1,0 +1,52 @@
+@use '/@/assets/styles/app';
+@use '/@/assets/styles/element';
+@use '/@/assets/styles/var';
+@use '/@/assets/styles/dark';
+
+
+html.grey {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+}
+.hove{
+    cursor:pointer;
+}
+.m-b-10 {
+    margin-bottom: 10px;
+    display:flex;
+    gap: 10px;
+}
+.m-t-10 {
+    margin-top: 10px;
+}
+.btn {
+    padding: 5px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00000050;
+}
+.avatar-uploader .avatar {
+    width: 178px;
+    height: 178px;
+    display: block;
+}
+
+.operate_btn{
+    padding: 5px;
+}
+.btn_shadow{
+    transition: .2s all;
+    box-shadow: 0 0 10px #00000050;
+    padding: 5px;
+    height: auto;
+    border-radius: 5px;
+    &:active {
+        box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+}
+//btn_shadow
+//<div class="operate_btn">
